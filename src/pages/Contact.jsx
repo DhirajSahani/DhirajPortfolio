@@ -108,14 +108,14 @@ const Contact = () => {
           <div className="space-y-3 sm:space-y-4 text-center md:text-left text-sm sm:text-base">
             <p className="flex items-center justify-center md:justify-start">
               📧 Email:{" "}
-              <span className="ml-2 font-semibold">santoshkumarsahani778@gmail.com</span>
+              <span className="ml-2 font-semibold">dhirajsahani998@gmail.com</span>
             </p>
             <p className="flex items-center justify-center md:justify-start">
-              📞 Phone: <span className="ml-2 font-semibold">+91 9644767257</span>
+              📞 Phone: <span className="ml-2 font-semibold">+977 9704603750</span>
             </p>
             <p className="flex items-center justify-center md:justify-start">
               📍 Location:{" "}
-              <span className="ml-2 font-semibold">Bhopal, Madhya Pradesh, India</span>
+              <span className="ml-2 font-semibold">Garuda,Malahi,Rautahat,Nepal</span>
             </p>
           </div>
         </div>

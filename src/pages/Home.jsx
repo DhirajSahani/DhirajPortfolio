@@ -47,7 +47,7 @@ const Home = () => {
             <span className="font-semibold text-pink-400">JavaScript</span>, and{" "}
             <span className="font-semibold text-purple-400">TailwindCSS</span>. Experienced in frontend & backend development with additional expertise in{" "}
             <span className="font-semibold text-indigo-400">Next.js</span> and{" "}
-            <span className="font-semibold text-green-400">WordPress customization</span>.
+            <span className="font-semibold text-green-400">WordPress Development</span>.
           </p>
           <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:from-purple-600 hover:to-blue-500 transition mb-6 md:mb-0">
             Hire Me
