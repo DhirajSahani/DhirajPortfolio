@@ -1,36 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
-import santosh from "../assets/santosh.jpg";
-import idCard from "../assets/idcard.jpg";
+import profile from "../assets/dhirajlogo.jpeg";
 import degree from "../assets/degree.jpg";
 import cert from "../assets/cert.jpg";
 import evnp from "../assets/evnp.jpg";
-import autocad2 from "../assets/autocad2.jpg";
-import autocad3 from "../assets/autocad3.jpg";
-import autocad from "../assets/autocad.jpg";
+import htmlCert from "../assets/autocad2.jpg";
+import cssCert from "../assets/autocad3.jpg";
+import jsCert from "../assets/autocad.jpg";
 import licience from "../assets/licience.jpg";
 import Footer from "../Component/Footer";
 
 const Resume = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const certificates = [cert, degree, evnp, autocad2, autocad3, autocad, licience];
+  const certificates = [cert, degree, evnp, htmlCert, cssCert, jsCert, licience];
 
   // Disable right click + screenshot shortcuts
   useEffect(() => {
     const disableContextMenu = (e) => e.preventDefault();
     const disableKey = (e) => {
-      // Block PrintScreen
       if (e.key === "PrintScreen") {
-        navigator.clipboard.writeText(""); // Clear clipboard
+        navigator.clipboard.writeText("");
         alert("Screenshots are disabled for security reasons.");
       }
-      // Block Ctrl+S, Ctrl+Shift+S
       if ((e.ctrlKey || e.metaKey) && (e.key === "s" || e.key === "S")) {
         e.preventDefault();
         alert("Saving or screenshots are disabled.");
       }
-      // Block common screenshot shortcuts (Windows + Mac)
       if ((e.ctrlKey && e.shiftKey && e.key === "S") || (e.metaKey && e.shiftKey && e.key === "4")) {
         e.preventDefault();
         alert("Screenshots are disabled on this page.");
@@ -56,28 +52,24 @@ const Resume = () => {
             My <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Resume</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg md:text-xl">
-            A summary of my education, experience, skills, and achievements in Structural Design.
+            A summary of my education, experience, skills, and achievements in Web Development.
           </p>
         </section>
 
         {/* Profile Section */}
         <section className="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-lg p-8 mb-12 relative">
           <img
-            src={santosh}
-            alt="Santosh Kumar Sahani"
+            src={profile}
+            alt="Dhiraj Kr Sahani"
             className="w-40 h-40 rounded-2xl mb-6 md:mb-0 md:mr-12 pointer-events-none"
             draggable="false"
           />
-          {/* Transparent watermark overlay */}
-          {/* <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-6xl font-bold opacity-20 select-none pointer-events-none">
-            © Santosh
-          </div> */}
           <div className="text-center md:text-left">
-            <h2 className="text-2xl font-bold mb-2">Santosh Kumar Sahani</h2>
-            <p className="text-gray-600 mb-2">Structural Designer</p>
-            <p className="text-gray-600 mb-2">Email: santoshkumarsahani778@gmail.com</p>
-            <p className="text-gray-600 mb-2">Phone: +91 9644767257</p>
-            <p className="text-gray-600">Location: Bhopal, Madhya Pradesh</p>
+            <h2 className="text-2xl font-bold mb-2">Dhiraj Kr Sahani</h2>
+            <p className="text-gray-600 mb-2">Full Stack Developer </p>
+            <p className="text-gray-600 mb-2">Email: dhirajsahani998@gmail.com</p>
+            <p className="text-gray-600 mb-2">Phone: +977 9704603750 </p>
+            <p className="text-gray-600">Location: Garuda,Malahi-03,Rautahat,Nepal</p>
           </div>
         </section>
 
@@ -99,9 +91,8 @@ const Resume = () => {
                   className="w-full h-60 object-cover pointer-events-none select-none"
                   draggable="false"
                 />
-                {/* Watermark Overlay */}
                 <span className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold opacity-30 select-none pointer-events-none">
-                  © Santosh
+                  © Dhiraj
                 </span>
               </div>
             ))}
@@ -124,9 +115,8 @@ const Resume = () => {
                 className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-lg pointer-events-none select-none"
                 draggable="false"
               />
-              {/* Watermark inside modal */}
               <span className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold opacity-25 select-none pointer-events-none">
-                Santosh Kumar Sahani
+                Dhiraj Kr Sahani
               </span>
             </div>
           </div>

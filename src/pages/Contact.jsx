@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import santosh from "../assets/santosh.jpg";
+import santosh from "../assets/dhirajlogo.jpeg";
 import Footer from "../Component/Footer";
 
 const Contact = () => {

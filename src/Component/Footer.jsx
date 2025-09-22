@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import santosh from "../assets/santosh.jpg";
+import dhirajlogo from "../assets/dhirajlogo.jpeg";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Logo and About */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img
-            src={santosh}
+            src={dhirajlogo}
             alt="logo"
             className="w-24 h-24 mb-4 rounded-full shadow-lg"
           />
