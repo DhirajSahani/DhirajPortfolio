@@ -31,11 +31,10 @@ export default function Footer() {
         {/* Logo and About */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img src={dhirajlogo} alt="logo" className="w-24 h-24 mb-4 rounded-full shadow-lg" />
-          <h4 className="text-green-500 font-bold uppercase text-lg">Your Vision</h4>
-          <h5 className="text-gray-300 italic font-semibold mb-3">My Design</h5>
+          <h4 className="text-green-500 font-bold uppercase text-lg">About Me </h4>
+          {/* <h5 className="text-gray-300 italic font-semibold mb-3">Me</h5> */}
           <p className="text-gray-400 text-sm md:text-base">
-            “I’m Dhiraj Kr Sahani, a passionate Full Stack Developer dedicated to building modern, scalable, and user-friendly web applications. I specialize in MERN Stack (MongoDB, Express.js, React.js, Node.js), JavaScript, TailwindCSS, Next.js, HTML, CSS, and also provide WordPress development solutions.”
-          </p>
+            I’m a Computer Science Engineering graduate with 2.5+ years of experience in Back Office , data management, and back-office processes. Currently working as an ERP Executive at SJS Enterprises Limited, I manage production data and ensure smooth workflow. I also have hands-on skills in MERN stack development and enjoy building user-friendly web applications.</p>
         </div>
 
         {/* Contact Info */}
@@ -43,7 +42,7 @@ export default function Footer() {
           <h4 className="text-green-500 font-bold uppercase mb-4">Contact Me</h4>
           <div className="flex items-center gap-2 mb-2">
             <FaPhoneAlt className="text-green-400" />
-            <span>+977 9704603750</span>
+            <span>+91 8235515905</span>
           </div>
           <div className="flex items-center gap-2 mb-2">
             <FaEnvelope className="text-green-400" />
@@ -51,7 +50,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2 mb-2">
             <FaMapMarkerAlt className="text-green-400" />
-            <span>Garuda, Malahi-03, Rautahat, Nepal</span>
+            <span>Bangaluru, India</span>
           </div>
 
           {/* Social Links */}
