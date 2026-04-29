@@ -3,7 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import profile from "../assets/dhirajlogo.jpeg";
 import digree from "../assets/digree.jpg";
 import merncer from "../assets/merncer.jpg";
-import env from "../assets/plustwo.png";
+import env from "../assets/env.png";
 import certificate from "../assets/certificate.png";
 import sca from "../assets/sca.jpg";
 import dainik from "../assets/dainik.jpg";
@@ -19,7 +19,7 @@ const Resume = () => {
   const certificates = [
     { img: merncer, name: "MERN Stack Certificate", file: "mern.jpg" },
     { img: digree, name: "Bachelor Degree", file: "degree.jpg" },
-    { img: env, name: "+2 Certificate", file: "plustwo.png" },
+    { img: env, name: "+2 Certificate", file: "env.png" },
     { img: certificate, name: "Mark Sheet Engineering", file: "marksheet.png" },
     { img: sca, name: "C & C++ Certificate", file: "ccpp.jpg" },
     { img: dainik, name: "Dainik Bhaskar Certificate", file: "dainik.jpg" },
