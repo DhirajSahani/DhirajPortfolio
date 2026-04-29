@@ -11,6 +11,7 @@ import nec from "../assets/Dataentry.png";
 import digital from "../assets/digital.jpg";
 import Footer from "../Component/Footer";
 
+
 const Resume = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
