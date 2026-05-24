@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import dhirajlogo from "../assets/dhirajlogo.jpeg";
-
 export default function Footer() {
-  // Default map location: Malahi, Rautahat, Nepal
+  // Default map location: Angondhalli, Karnataka, India
   const [mapSrc, setMapSrc] = useState(
-    "https://www.google.com/maps?q=Malahi,+Garuda,+Rautahat,+Nepal&output=embed"
+    "https://www.google.com/maps?q=Angondhalli,+Karnataka,+India&output=embed"
   );
 
   useEffect(() => {
@@ -14,12 +13,16 @@ export default function Footer() {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          // Embed Google Maps without API key using latitude/longitude
+
+          // Embed Google Maps using current latitude/longitude
           const url = `https://maps.google.com/maps?q=${latitude},${longitude}&z=15&output=embed`;
+
           setMapSrc(url);
         },
         (error) => {
-          console.warn("Geolocation not available or permission denied. Using default Malahi location.");
+          console.warn(
+            "Geolocation not available or permission denied. Using default Angondhalli location."
+          );
         }
       );
     }
