@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "../Component/Footer";
 import profile from "../assets/dhirajpp.png";
 import popupImg from "../assets/erp.jpeg"; // 👉 your uploaded image
-import cvfile from "../assets/dhirajcv.pdf";
+import cvfile from "../assets/dhirajcv.pdf"; // 👉 your uploaded CV file
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(true);
