@@ -9,6 +9,7 @@ import sca from "../assets/sca.jpg";
 import dainik from "../assets/dainik.jpg";
 import nec from "../assets/Dataentry.png";
 import digital from "../assets/digital.jpg";
+import forhr from "../assets/forhr.png";
 import Footer from "../Component/Footer";
 
 
@@ -25,6 +26,7 @@ const Resume = () => {
     { img: dainik, name: "Dainik Bhaskar Certificate", file: "dainik.jpg" },
     { img: nec, name: "Experience Certificate", file: "experience.png" },
     { img: digital, name: "Digital Marketing", file: "digital.jpg" },
+    { img: forhr, name: "For HR Letter", file: "forhr.png" },
   ];
 
   useEffect(() => {
